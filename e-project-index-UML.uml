@@ -183,7 +183,7 @@
     </ownedEnd>
     <ownedEnd xmi:type="uml:Property" xmi:id="_mhGLYM8EEeilY4iMfQatrw" name="project" type="_4fNG4M4sEeiMKIbqU9sQUg" association="_mhE9QM8EEeilY4iMfQatrw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rfVnAM8EEeilY4iMfQatrw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rfZRYM8EEeilY4iMfQatrw" value="*"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rfZRYM8EEeilY4iMfQatrw" value="1"/>
     </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_DFkIQM9DEeilY4iMfQatrw" name="DocType">
