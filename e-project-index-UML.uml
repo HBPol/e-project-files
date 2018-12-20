@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_F-1OYM4lEeiMKIbqU9sQUg" name="e-project-index-UML" URI="">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_F-1OYM4lEeiMKIbqU9sQUg" name="e-project-index-UML" visibility="public" URI="">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_GELBYM4lEeiMKIbqU9sQUg">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
@@ -28,9 +28,11 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_4iq1IM4tEeiMKIbqU9sQUg" name="prefix" isUnique="false">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_4fNG6c4sEeiMKIbqU9sQUg" name="edit"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_4fNG6s4sEeiMKIbqU9sQUg" name="add"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_4fNG684sEeiMKIbqU9sQUg" name="view"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fkshYAPzEemrouKOPViWSw" name="leader" visibility="public" type="_bwnbcM7wEeilY4iMfQatrw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YwudwAP0EemrouKOPViWSw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yw1LcAP0EemrouKOPViWSw" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4fNG6s4sEeiMKIbqU9sQUg" name="__str__:String"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_z28lgM4wEeiMKIbqU9sQUg" name="Report">
     <generalization xmi:type="uml:Generalization" xmi:id="_foMTgM78EeilY4iMfQatrw" general="_jUppEM76EeilY4iMfQatrw"/>
@@ -66,6 +68,11 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_eD7scM7xEeilY4iMfQatrw" name="email">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9WHtUAP0EemrouKOPViWSw" name="projects" type="_4fNG4M4sEeiMKIbqU9sQUg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O-iVgAP1EemrouKOPViWSw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O-nOAAP1EemrouKOPViWSw" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_jS-mcAPyEemrouKOPViWSw" name="__str__:String"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_rFe3MM7xEeilY4iMfQatrw" name="RelatedFile">
     <generalization xmi:type="uml:Generalization" xmi:id="_gr2I4M78EeilY4iMfQatrw" general="_jUppEM76EeilY4iMfQatrw"/>
@@ -122,9 +129,7 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_kT2EAM4wEeiMKIbqU9sQUg" name="pdfPath">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_EufycM4mEeiMKIbqU9sQUg" name="edit"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_JqRokM4pEeiMKIbqU9sQUg" name="view"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_FuR0cM4mEeiMKIbqU9sQUg" name="add"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_EufycM4mEeiMKIbqU9sQUg" name="__str__:String"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_diRBcM7_EeilY4iMfQatrw" memberEnd="_diRogs7_EeilY4iMfQatrw _diTdsM7_EeilY4iMfQatrw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_diRogM7_EeilY4iMfQatrw" source="org.eclipse.papyrus">
@@ -146,9 +151,7 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_vN_KYM8BEeilY4iMfQatrw" name="roomNo" isUnique="false">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_u0jzMM8AEeilY4iMfQatrw" name="add"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_zXaTUM8AEeilY4iMfQatrw" name="view"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_2GVXsM8AEeilY4iMfQatrw" name="edit"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_u0jzMM8AEeilY4iMfQatrw" name="__str__:String"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_MqjLgM8BEeilY4iMfQatrw" memberEnd="_MqlAsM8BEeilY4iMfQatrw _Mqm14M8BEeilY4iMfQatrw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MqkZoM8BEeilY4iMfQatrw" source="org.eclipse.papyrus">
@@ -196,9 +199,7 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_ikkFwM9DEeilY4iMfQatrw" name="shortName">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_qK0FcM9DEeilY4iMfQatrw" name="edit"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_qK1TkM9DEeilY4iMfQatrw" name="view"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_qK2hsM9DEeilY4iMfQatrw" name="add"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qK0FcM9DEeilY4iMfQatrw" name="__str__:String"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="__QBkoM9DEeilY4iMfQatrw" memberEnd="__QCLss9DEeilY4iMfQatrw __QCywM9DEeilY4iMfQatrw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__QCLsM9DEeilY4iMfQatrw" source="org.eclipse.papyrus">
